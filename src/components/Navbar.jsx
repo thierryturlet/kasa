@@ -1,22 +1,16 @@
-
+import { Link } from 'react-router-dom'
 import kasaLogo from '../assets/logo.svg'; 
 
 const Navbar = () => {
   return (
-    <nav className="kasa-banner">
-      <div>
+    <header className="kasa-banner">
         <img src={kasaLogo} alt="Kasa logo" className="kasa-logo" />
-      </div>
-      <ul className="link">
-        <li>
+      <nav className="link">
           <Link to="/" className="links">Accueil</Link>
-        </li>
-        <li>
           <Link to="/about" className="links">À propos</Link>
-        </li>
-      </ul>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
-export default Navbar;
+export default Navbar; 

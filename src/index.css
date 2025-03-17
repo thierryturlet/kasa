@@ -28,6 +28,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #222;
+}
+
+.kasa-banner{
+  display: flex;
+align-items: center;
 }
 
 h1 {
