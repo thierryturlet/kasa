@@ -30,8 +30,9 @@ body {
   min-height: 100vh;
   background-color: #222;
 }
+
 #root{
-  min-height: 100vh;
+width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -70,20 +71,23 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.home {
-  flex: 1; /* Permet au contenu de s'étendre et pousse le footer en bas */
+.footer-banner{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;}
+
+.footer__logo {
+  width: 150px;  /* Ajuste la taille selon tes besoins */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centre le logo horizontalement */
 }
-.footer-banner {
-  
+
+.footer__text{
   color: white;
-  width: 100%;
-  text-align: center;
-  
 }
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
