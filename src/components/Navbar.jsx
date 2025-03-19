@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <header className="kasa-banner">
         <img src={kasaLogo} alt="Kasa logo" className="kasa-logo" />
-      <nav className="link">
-          <Link to="/" className="links">Accueil</Link>
-          <Link to="/about" className="links">À propos</Link>
+      <nav className="links">
+          <Link to="/" className="link">Accueil</Link>
+          <Link to="/about" className="link">À propos</Link>
       </nav>
     </header>
   );

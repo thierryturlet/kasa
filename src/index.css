@@ -25,17 +25,27 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+ 
   min-width: 320px;
   min-height: 100vh;
   background-color: #222;
 }
-
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .kasa-banner{
   display: flex;
 align-items: center;
+justify-content: space-between;
 }
 
+nav.links{
+  display: flex;
+  gap:20px;
+  margin:20px;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -58,6 +68,21 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.home {
+  flex: 1; /* Permet au contenu de s'étendre et pousse le footer en bas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-banner {
+  
+  color: white;
+  width: 100%;
+  text-align: center;
+  
 }
 
 @media (prefers-color-scheme: light) {
