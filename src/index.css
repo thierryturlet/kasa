@@ -55,16 +55,16 @@ h1 {
 .banner {
 
   height:200px; 
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
-  background-image:url('../assets/imgbanner.svg'); 
+ 
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
   border-radius: 15px;
- background-color: beige;
+ 
  margin: 0 auto;
 }
 
@@ -72,7 +72,11 @@ h1 {
   font-size: 42px;
   font-weight: bold;
   color: white;
+
+.stylebanner{
+  background: 'cover',
   
+}
  
 }
 
