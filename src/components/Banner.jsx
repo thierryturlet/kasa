@@ -1,9 +1,9 @@
 
 
-const Banner = () => {
+const Banner = ({text}) => {
     return (
       <div className="banner">        
-          <p className="banner__text">Chez vous,partout et ailleurs</p>
+          <p className="banner__text">{text}</p>
       </div>
     );
 };
