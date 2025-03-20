@@ -52,6 +52,31 @@ h1 {
   line-height: 1.1;
 }
 
+.banner {
+
+  height:200px; /* Ajuste la hauteur selon ton besoin */
+  width: 80%;
+  max-width: 1200px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 15px;
+ background-color: beige;
+ margin: 0 auto;
+}
+
+.banner__text {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  
+ 
+}
+
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -74,7 +99,8 @@ button:focus-visible {
 .footer-banner{
   display: flex;
   flex-direction: column;
-  align-items: center;}
+  align-items: center;
+}
 
 .footer__logo {
   width: 150px;  /* Ajuste la taille selon tes besoins */
@@ -86,7 +112,14 @@ button:focus-visible {
 .footer__text{
   color: white;
 }
-
+.main{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
 
 
 @media (prefers-color-scheme: light) {
