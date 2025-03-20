@@ -28,7 +28,7 @@ body {
  
   min-width: 320px;
   min-height: 100vh;
-  background-color: #222;
+  background-color:white;
 }
 
 #root{
@@ -73,10 +73,7 @@ h1 {
   font-weight: bold;
   color: white;
 
-.stylebanner{
-  background: 'cover',
-  
-}
+
  
 }
 
@@ -105,10 +102,12 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
+  padding-top: 35px;
 }
 
 .footer__logo {
-  width: 150px;  /* Ajuste la taille selon tes besoins */
+  width: 150px;  
   height: auto;
   display: block;
   margin: 0 auto; /* Centre le logo horizontalement */
