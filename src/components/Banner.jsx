@@ -9,9 +9,10 @@ const Banner = ({text, image}) => {
           backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          width: '80%', 
-          borderRadius: '25px' //
-          
+          width: '100%', 
+          borderRadius: '25px', //
+          maxWidth:'1024px',
+          padding:'0px',
         }}
       >    
           <p className="banner__text">{text}</p>
