@@ -12,7 +12,7 @@ const Banner = ({text, image}) => {
           width: '100%', 
           borderRadius: '25px', //
           maxWidth:'1024px',
-          padding:'0px',
+          
         }}
       >    
           <p className="banner__text">{text}</p>
