@@ -1,10 +1,11 @@
 
 
-const Card = ({ text }) => {
+const Card = ({ text,cover }) => {
     return (
-      <div className="card-home">
+      <a className="card-home">
+        <img src={cover}/>
         <p className="card__text">{text}</p>
-      </div>
+      </a>
     );
   };
   

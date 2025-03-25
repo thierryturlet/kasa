@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner'; 
 import imgbanner from '../assets/imgbanner.png';
-import Card from '../components/card';
+import Homecards from '../components/Homecards';
 import logements from '../data/logements.json';
 console.log(logements);
 
@@ -17,18 +17,10 @@ const Home = () => {
       <div className="main">
         <h1>Home</h1>
       
-
-        <div className="cards-container">
-          
-          <Card text="titre de la location" />  
-          <Card text="titre de la location" />
-          <Card text="titre de la location" />
-          <Card text="titre de la location" />
-          <Card text="titre de la location" />
-          <Card text="titre de la location" />
+        
+        <Homecards />
         </div>
-      </div>
-
+      
       <Footer />
     </>
   );
