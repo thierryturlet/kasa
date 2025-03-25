@@ -9,7 +9,7 @@ const Banner = ({text, image}) => {
           backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          width: '100%', 
+          
           borderRadius: '25px', //
           maxWidth:'1024px',
           

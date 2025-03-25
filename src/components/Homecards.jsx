@@ -4,8 +4,13 @@ import Card from "./Card";
 function Homecards() {
   return (
     <div className="homecards">
-      {logements.map((logements) => (
-        <Card key={logements.id} text={logements.title} cover={logements.cover} />
+      {logements.map((logement) => ( 
+        <Card 
+          key={logement.id} 
+          id={logement.id} // Ajout de l'ID ici
+          text={logement.title} 
+          cover={logement.cover} 
+        />
       ))}
     </div>
   );
