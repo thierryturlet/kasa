@@ -10,7 +10,7 @@ const About = () => {
       <Navbar />
       <Banner image={bannerabout}  />
        <div className="main">
-        <h1>About</h1>
+        
       </div>
       <Footer opacity={0.3}  />
       

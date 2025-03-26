@@ -7,7 +7,7 @@ function Homecards() {
       {logements.map((logement) => ( 
         <Card 
           key={logement.id} 
-          id={logement.id} // Ajout de l'ID ici
+          id={logement.id} 
           text={logement.title} 
           cover={logement.cover} 
         />

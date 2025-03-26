@@ -15,7 +15,7 @@ const Home = () => {
       <Banner text="Chez vous, partout et ailleurs" image={imgbanner} />
       
       <div className="main">
-        <h1>Home</h1>
+        
       
         
         <Homecards />
