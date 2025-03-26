@@ -2,40 +2,22 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import data from "../data/logements.json";
-import { useState } from "react";
+import Slideshow from "../components/Slideshow.jsx";
 
 const LogementPage = () => {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
-  const [currentIndex, setCurrentIndex] = useState(0); // Gérer le carrousel
 
-  if (!logement) {
-    return <p>Logement non trouvé</p>;
-  }
 
-  // Fonction pour changer l'image du carrousel
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % logement.pictures.length);
-  };
+ 
 
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + logement.pictures.length) % logement.pictures.length
-    );
-  };
 
   return (
     <>
       <Navbar />
       
-
-        {/* Carrousel d'images */}
-        <div className="carousel">
-          <button onClick={prevImage} className="prev">❮</button>
-          <img src={logement.pictures[currentIndex]} alt={logement.title} />
-          <button onClick={nextImage} className="next">❯</button>
-        </div>
+      <Slideshow pictures={logement.pictures} title={logement.title} />
+   
         <div className="logement-container">
         <h1>{logement.title}</h1>
         <p className="location">{logement.location}</p>
