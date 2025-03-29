@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import data from "../data/logements.json";
 import Slideshow from "../components/Slideshow.jsx";
+import Collapse from "../components/Collapse"
+import  "../pages/logement.css";
 
 const LogementPage = () => {
   const { id } = useParams();
@@ -17,11 +19,11 @@ const LogementPage = () => {
       <Navbar />
       
       <Slideshow pictures={logement.pictures} title={logement.title} />
-   
+    
         <div className="logement-container">
         <h1>{logement.title}</h1>
         <p className="location">{logement.location}</p>
-
+        </div>
         
 
         {/* Affichage des tags */}
@@ -31,12 +33,12 @@ const LogementPage = () => {
           ))}
         </div>
 
-        <p>{logement.description}</p>
-
-        {/* Affichage de l'hôte */}
-        <div className="host">
+             {/* Affichage de l'hôte */}
+             <div className="host">
           <p>{logement.host.name}</p>
+          <div className="host-picture">
           <img src={logement.host.picture} alt={logement.host.name} />
+          </div>
         </div>
 
         {/* Affichage de la note */}
@@ -44,16 +46,22 @@ const LogementPage = () => {
           {"★".repeat(logement.rating).padEnd(5, "☆")}
         </div>
 
-        {/* Affichage des équipements */}
-        <div className="equipements">
-          <h3>Équipements</h3>
-          <ul>
-            {logement.equipments.map((equipement, index) => (
-              <li key={index}>{equipement}</li>
+          <div className="collapse-information">
+          {/* Collapse pour la description */}
+          <Collapse title="Description" content={logement.description} />
+
+          {/* Collapse pour les équipements */}
+          <Collapse  title="Équipements" content={
+         <ul>
+          {logement.equipments.map((equipement, index) => (
+            <li key={index}>{equipement}</li>
             ))}
           </ul>
-        </div>
-      </div>
+            } 
+          />
+          </div>
+
+
 
       <Footer />
     </>

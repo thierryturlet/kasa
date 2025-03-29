@@ -20,9 +20,9 @@ const Slideshow = ({ pictures, title }) => {
       {/* Bouton précédent avec SVG (affiché seulement si plus d'une image) */}
       {pictures.length > 1 && (
         <button onClick={prevImage} className="prev">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-            <path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" />
-          </svg>
+          <svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.04 7.78312L39.92 0.703125L0.359985 40.3031L39.96 79.9031L47.04 72.8231L14.52 40.3031L47.04 7.78312Z" fill="white"/>
+</svg>
         </button>
       )}
 
@@ -34,9 +34,9 @@ const Slideshow = ({ pictures, title }) => {
       {/* Bouton suivant avec SVG (affiché seulement si plus d'une image) */}
       {pictures.length > 1 && (
         <button onClick={nextImage} className="next">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-            <path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
-          </svg>
+       <svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z" fill="white"/>
+</svg>
         </button>
       )}
 
