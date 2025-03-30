@@ -190,12 +190,7 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 1024px) {
-  .homecards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 @media (max-width: 768px) {
   
@@ -238,11 +233,34 @@ button:focus-visible {
     width: 280px;
     height: 256px;
   }
+  .next svg{
+    width:15px;
+  }
+  .prev svg{
+    width: 15px;
+  }
+  .image-index{
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: -2px;
+  }
   .style-location{
     flex-direction: column;
   }
   .info-owner{
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+  .collapse-information{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  .collapse-header{
+    width: 95%;
   }
 }
