@@ -18,8 +18,11 @@ const LogementPage = () => {
     <>
       <Navbar />
       
+      <div className="logement-main">
       <Slideshow pictures={logement.pictures} title={logement.title} />
-    
+
+  <div className="style-location">
+    <div className="info-location">
         <div className="logement-container">
         <h1>{logement.title}</h1>
         <p className="location">{logement.location}</p>
@@ -32,8 +35,10 @@ const LogementPage = () => {
             <span key={index} className="tag">{tag}</span>
           ))}
         </div>
+    </div>
 
              {/* Affichage de l'hôte */}
+    <div className="info-owner">
              <div className="host">
           <p>{logement.host.name}</p>
           <div className="host-picture">
@@ -45,7 +50,8 @@ const LogementPage = () => {
         <div className="rating">
           {"★".repeat(logement.rating).padEnd(5, "☆")}
         </div>
-
+    </div>
+</div> 
           <div className="collapse-information">
           {/* Collapse pour la description */}
           <Collapse title="Description" content={logement.description} />
@@ -62,8 +68,9 @@ const LogementPage = () => {
           </div>
 
 
-
+      </div>
       <Footer />
+    
     </>
   );
 };

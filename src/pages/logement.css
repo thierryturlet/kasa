@@ -1,3 +1,9 @@
+.logement-main{
+  margin: 0 auto;
+  width: 80vw;
+}
+
+
 .logement-container h1 {
   font-size: 36px;
   font-style: normal;
@@ -15,15 +21,15 @@
 }
 
 .tags span {
-  background-color: #ff6060; /* Couleur de fond */
-  color: white; /* Texte blanc */
-  font-size: 16px;
+  background-color: #ff6060; 
+  color: white; 
+  font-size: 14px;
   font-weight: 500;
   padding: 4px 18px;
-  border-radius: 20px; /* Arrondi */
+  border-radius: 20px; 
   display: inline-block;
   text-align: center;
-  white-space: nowrap; /* Évite le retour à la ligne */
+  white-space: nowrap; 
   gap: 15px;
 }
 
@@ -35,10 +41,23 @@
   gap: 20px;
 }
 
+
+.info-owner {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  margin-bottom:35px;
+  justify-content:center ;
+
+}
+
 .host-picture {
   height: 64px;
   width: 64px;
+  float: right;
+
 }
+
 
 .host p {
   color: #ff6060;
@@ -46,6 +65,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
+  float: left;
+  margin-right: 10px;
 }
 
 .host img {
@@ -60,4 +81,10 @@
   color: #ff6060;
   font-weight: bold;
 }
+.style-location{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 

@@ -1,6 +1,5 @@
 .collapse {
   width: 100%;
-  max-width: 600px;
   font-family: Arial, sans-serif;
 }
 
@@ -34,29 +33,21 @@
 
 .collapse-content {
   background: #f8f8f8;
-  color: #ff6060;
+  color: rgba(12, 1, 1, 0.763);
   padding: 15px;
   border-radius: 5px;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
   width: 98%;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .collapse-content ul {
-    list-style: none; /* Supprime les puces */
-    padding: 0; /* Supprime l'espace à gauche */
-    margin: 0;
-  }
-  .collapse-content ul {
-    list-style: none; /* Supprime les puces */
-    padding: 0; /* Supprime l'espace à gauche */
+    list-style: none; 
+    padding: 0; 
     margin: 0;
   }
   
-  .collapse-content ul {
-    list-style: none;
-  }
   
   .collapse-information{
     display: flex;
