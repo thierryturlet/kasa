@@ -80,15 +80,15 @@ h1 {
   font-weight: bold;
   color: white;
   position: relative;
-  z-index: 2; /* Devant l'overlay */
+  z-index: 2; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .homecards {
   display: flex;
-  flex-direction: row;
+ 
   flex-wrap: wrap;
-justify-content: center;
+justify-content: space-evenly;
   gap: 35px;
   padding: 20px;
   width: 69%;
@@ -198,26 +198,29 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
-  .homecards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
   nav.links {
     text-transform: uppercase;
   }
   nav.links a {
     font-size: 12px;
   }
+
+  .style-location{
+    flex-direction: column;
+  }
+  .info-owner{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 320px) {
-  .homecards {
-    grid-template-columns: repeat(1, 1fr);
-    background-color: transparent;
-  }
+
   .kasa-logo {
     width: 25%;
   }
+
 
   a {
     font-size: 18px;
@@ -234,5 +237,12 @@ button:focus-visible {
   .card-home {
     width: 280px;
     height: 256px;
+  }
+  .style-location{
+    flex-direction: column;
+  }
+  .info-owner{
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
