@@ -11,7 +11,6 @@ const Banner = ({text, image}) => {
           backgroundPosition: 'center',
           marginBottom: '40px',
           borderRadius: '25px', //
-          maxWidth:'1024px',
           
         }}
       >    
