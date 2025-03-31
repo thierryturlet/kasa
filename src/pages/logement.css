@@ -1,7 +1,5 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
-
 body{font-family: "Montserrat", sans-serif;}
 
 
@@ -104,7 +102,7 @@ body{font-family: "Montserrat", sans-serif;}
     justify-content: space-between;
   }
   .image-index{
-    left: 4%;
+    left: 45%;
   }
   .next svg{
     width:15px;
@@ -119,8 +117,56 @@ body{font-family: "Montserrat", sans-serif;}
   }
 }
 
+@media (max-width: 375px){
+  .info-owner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .host {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .host-picture {
+    height: 60px;
+    width: 60px;
+    float: right;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    font-size: 18px; /* Ajuster la taille des étoiles */
+  }
+
+
+  .kasa-banner img {
+    width: 25%;
+  }
+
+  .image-index{
+    left: 45%;
+  }
+  .collapse-information{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tags{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 @media (max-width: 320px) {
+
+.logement-main{
+  width: 90vw;
+}
+
 .next svg{
   width:15px;
 }
@@ -136,18 +182,32 @@ body{font-family: "Montserrat", sans-serif;}
   font-size: 20px;
   letter-spacing: -2px;
 }
+
+.host-picture {
+  height: 60px;
+  width: 60px;
+  float: right;
+}
+
 .style-location{
   flex-direction: column;
 }
 .info-owner{
-  flex-direction: row-reverse;
-  justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  
+}
+.tags{
+  display: flex;
+  flex-wrap: wrap;
 }
 .tags span{
-  font-size: 9px;
-  font-weight: bold;
-  padding: 10px 8px;
-  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 18px;
+  border-radius: 10px; 
 }
 
 .collapse-information{
