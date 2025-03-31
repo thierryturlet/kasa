@@ -1,3 +1,10 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+body{font-family: "Montserrat", sans-serif;}
+
+
 .logement-main{
   margin: 0 auto;
   width: 80vw;
@@ -17,7 +24,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
-  color: #ff6060;
+  color: rgba(0, 0, 0, 1);
 }
 
 .tags span {
@@ -26,7 +33,7 @@
   font-size: 14px;
   font-weight: 500;
   padding: 4px 18px;
-  border-radius: 20px; 
+  border-radius: 10px; 
   display: inline-block;
   text-align: center;
   white-space: nowrap; 
@@ -87,4 +94,65 @@
   
 }
 
+@media (max-width: 768px) {
+  .style-location{
+    flex-direction: column;
+  }
+  .info-owner{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .image-index{
+    left: 4%;
+  }
+  .next svg{
+    width:15px;
+  }
+  .prev svg{
+    width: 15px;
+  }
+}
 
+
+@media (max-width: 320px) {
+.next svg{
+  width:15px;
+}
+.prev svg{
+  width: 15px;
+}
+.image-index{
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  letter-spacing: -2px;
+}
+.style-location{
+  flex-direction: column;
+}
+.info-owner{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.tags span{
+  font-size: 9px;
+  font-weight: bold;
+  padding: 10px 8px;
+  border-radius: 7px;
+}
+
+.collapse-information{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.collapse-header{
+  width: 95%;
+}
+.collapse-content {
+  width: 91%;
+}
+}
