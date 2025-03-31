@@ -5,6 +5,7 @@ import data from "../data/logements.json";
 import Slideshow from "../components/Slideshow.jsx";
 import Collapse from "../components/Collapse"
 import  "../pages/logement.css";
+import Rating from "../components/Rating.jsx";
 
 const LogementPage = () => {
   const { id } = useParams();
@@ -47,9 +48,8 @@ const LogementPage = () => {
         </div>
 
         {/* Affichage de la note */}
-        <div className="rating">
-          {"★".repeat(logement.rating).padEnd(5, "☆")}
-        </div>
+        <Rating rating={logement.rating} />
+
     </div>
 </div> 
           <div className="collapse-information">

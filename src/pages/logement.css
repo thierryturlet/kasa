@@ -84,9 +84,10 @@ body{font-family: "Montserrat", sans-serif;}
 }
 
 .rating {
-  font-size: 40px;
   color: #ff6060;
-  font-weight: bold;
+  font-size: 36px;
+  padding-top: 34px;
+  
 }
 .style-location{
   display: flex;
@@ -110,6 +111,11 @@ body{font-family: "Montserrat", sans-serif;}
   }
   .prev svg{
     width: 15px;
+  }
+  .rating {
+    color: #ff6060;
+    font-size: 18px;
+    
   }
 }
 
