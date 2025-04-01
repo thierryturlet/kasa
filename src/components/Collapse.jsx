@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import "./Collapse.css"; // Le fichier CSS associé
+import "./Collapse.css"; 
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const Collapse = ({ title, content }) => {
       <button className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
   {title}
   <span className={`arrow ${isOpen ? "open" : ""}`}>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="24" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M6 9L12 15L18 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   </span>

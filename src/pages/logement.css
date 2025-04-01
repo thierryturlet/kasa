@@ -1,13 +1,11 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
-
-body{font-family: "Montserrat", sans-serif;}
-
-
-.logement-main{
+.logement-main {
   margin: 0 auto;
   width: 80vw;
 }
-
 
 .logement-container h1 {
   font-size: 36px;
@@ -26,43 +24,42 @@ body{font-family: "Montserrat", sans-serif;}
 }
 
 .tags span {
-  background-color: #ff6060; 
-  color: white; 
+  background-color: #ff6060;
+  color: white;
   font-size: 14px;
   font-weight: 500;
   padding: 4px 18px;
-  border-radius: 10px; 
+  border-radius: 10px;
   display: inline-block;
   text-align: center;
-  white-space: nowrap; 
+  white-space: nowrap;
   gap: 15px;
 }
 
 .tags {
   display: flex;
   flex-direction: row;
+
+  flex-wrap: wrap;
+
   justify-content: flex-start;
   padding-bottom: 45px;
   gap: 20px;
 }
 
-
 .info-owner {
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
-  margin-bottom:35px;
-  justify-content:center ;
-
+  align-items: flex-end;
+  margin-bottom: 35px;
+  justify-content: center;
 }
 
 .host-picture {
   height: 64px;
   width: 64px;
   float: right;
-
 }
-
 
 .host p {
   color: #ff6060;
@@ -85,39 +82,67 @@ body{font-family: "Montserrat", sans-serif;}
   color: #ff6060;
   font-size: 36px;
   padding-top: 34px;
-  
 }
-.style-location{
+.style-location {
   display: flex;
   justify-content: space-between;
-  
+}
+
+.collapse-information {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-  .style-location{
+  .host-picture {
+    height: 80px; 
+    width: 80px;
+  }
+
+  .style-location {
     flex-direction: column;
   }
-  .info-owner{
+  .info-owner {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .image-index{
+  .image-index {
     left: 45%;
   }
-  .next svg{
-    width:15px;
+  .next svg {
+    width: 15px;
   }
-  .prev svg{
+  .prev svg {
     width: 15px;
   }
   .rating {
     color: #ff6060;
     font-size: 18px;
-    
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px) {
+
+  .kasa-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .kasa-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
   .info-owner {
     display: flex;
     align-items: flex-start;
@@ -139,86 +164,76 @@ body{font-family: "Montserrat", sans-serif;}
 
   .rating {
     display: flex;
-    align-items: center; /* Centrer verticalement */
-    font-size: 18px; /* Ajuster la taille des étoiles */
+    align-items: center; 
+    font-size: 18px; 
   }
-
 
   .kasa-banner img {
     width: 25%;
   }
 
-  .image-index{
+  .image-index {
     left: 45%;
   }
-  .collapse-information{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tags{
+  .collapse-information {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media (max-width: 320px) {
+  .logement-main {
+    width: 90vw;
+  }
 
-.logement-main{
-  width: 90vw;
-}
+  .next svg {
+    width: 15px;
+  }
+  .prev svg {
+    width: 15px;
+  }
+  .image-index {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: -2px;
+  }
 
-.next svg{
-  width:15px;
-}
-.prev svg{
-  width: 15px;
-}
-.image-index{
-  position: absolute;
-  bottom: 10px;
-  left: 45%;
-  color: white;
-  border-radius: 5px;
-  font-size: 20px;
-  letter-spacing: -2px;
-}
+  .host-picture {
+    height: 60px;
+    width: 60px;
+    float: right;
+  }
 
-.host-picture {
-  height: 60px;
-  width: 60px;
-  float: right;
-}
-
-.style-location{
-  flex-direction: column;
-}
-.info-owner{
+  .style-location {
+    flex-direction: column;
+  }
+  .info-owner {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 10px;
-  
-}
-.tags{
-  display: flex;
-  flex-wrap: wrap;
-}
-.tags span{
-  font-size: 14px;
-  font-weight: 500;
-  padding: 4px 18px;
-  border-radius: 10px; 
-}
+  }
 
-.collapse-information{
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-}
-.collapse-header{
-  width: 95%;
-}
-.collapse-content {
-  width: 91%;
-}
+  .tags span {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 18px;
+    border-radius: 10px;
+  }
+
+  .collapse-information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .collapse-header {
+    width: 95%;
+  }
+  .collapse-content {
+    width: 91%;
+  }
 }

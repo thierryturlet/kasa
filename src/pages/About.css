@@ -1,0 +1,15 @@
+.about-container {
+    width: 80%; /* Ajuste la largeur pour qu'elle corresponde à la Banner */
+    max-width: 1200px; /* Empêche que ce soit trop large */
+    margin: 0 auto; /* Centre la section horizontalement */
+  }
+  
+  .collapse-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre chaque Collapse */
+  }
+
+  .collapse-content {
+    white-space: pre-line; /* Gère les sauts de ligne */
+  }

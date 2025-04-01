@@ -34,11 +34,11 @@
 .collapse-content {
   background: #f8f8f8;
   color: rgba(12, 1, 1, 0.763);
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
-  width: 98%;
+  width: 100%;
   font-size: 18px;
 }
 
