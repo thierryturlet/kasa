@@ -91,8 +91,8 @@ body {
 .collapse-information {
   display: flex;
   flex-direction: row;
-
-  flex-wrap: wrap;
+  gap: 50px;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -225,15 +225,4 @@ body {
     border-radius: 10px;
   }
 
-  .collapse-information {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .collapse-header {
-    width: 95%;
-  }
-  .collapse-content {
-    width: 91%;
-  }
 }
