@@ -133,26 +133,11 @@ body {
   }
 }
 
-@media (max-width: 425px) {
 
-  .kasa-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-}
 
 @media (max-width: 375px) {
 
-  .kasa-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
+
   .info-owner {
     display: flex;
     align-items: flex-start;
