@@ -11,6 +11,7 @@ const About = () => {
   return (
     <>
       <Navbar />
+      
       <Banner image={bannerabout} />
       
       <div className="main">

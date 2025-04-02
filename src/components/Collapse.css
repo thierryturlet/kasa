@@ -1,14 +1,17 @@
+
+
+
 .collapse {
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat",sans-serif,;
 }
 
-.collapse-header {
+.collapse-header{
   width: 100%;
   background-color: #ff6060;
   color: white;
-  font-size: 25px;
-  font-weight: 200px;
+  font-size: 13px;
+  font-weight: 700;
   padding: 10px;
   border: none;
   display: flex;

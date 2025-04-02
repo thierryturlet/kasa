@@ -4,6 +4,10 @@
     margin: 0 auto;
   }
   
+  .banner-about{
+background-color:rgba(0,0,0,1);
+  }
+
   .collapse-description {
     display: flex;
     flex-direction: column;
@@ -11,13 +15,12 @@
   }
 
   .collapse-header {
-
+    width: 100%;
     background-color: #ff6060;
     color: white;
-    font-size: 25px;
-    font-weight:700;
+    font-size: 24px;
+    font-weight: 700;
   }
-  
   .collapse-content {
     text-align: left;
     color: rgba(0,0,0,1);

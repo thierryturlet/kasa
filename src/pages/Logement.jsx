@@ -50,9 +50,12 @@ const LogementPage = () => {
         </div>
         <div className="collapse-information">
           {/* Collapse pour la description */}
-          <Collapse title="Description" content={logement.description} />
 
+          <div className="logement">
+          <Collapse title="Description" content={logement.description} />
+          
           {/* Collapse pour les équipements */}
+         
           <Collapse
             title="Équipements"
             content={
@@ -63,6 +66,7 @@ const LogementPage = () => {
               </ul>
             }
           />
+          </div>
         </div>
       </div>
       <Footer />

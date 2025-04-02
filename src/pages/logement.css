@@ -95,6 +95,16 @@ body {
   flex-wrap: nowrap;
 }
 
+.logement{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.logement .collapse-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .host-picture {
     height: 80px; 
@@ -179,6 +189,12 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .logement {
+    display: flex;
+    flex-direction: column;
+
+}
+
 }
 
 @media (max-width: 320px) {
@@ -224,5 +240,9 @@ body {
     padding: 4px 18px;
     border-radius: 10px;
   }
+  .logement {
+    display: flex;
+    flex-direction: column;
 
+}
 }
