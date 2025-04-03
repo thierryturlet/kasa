@@ -90,7 +90,7 @@ body {
 
 .collapse-information {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   gap: 50px;
   flex-wrap: nowrap;
 }
@@ -110,6 +110,7 @@ body {
     height: 80px; 
     width: 80px;
   }
+
 
   .style-location {
     flex-direction: column;
@@ -133,11 +134,24 @@ body {
   }
 }
 
-
+@media (max-width: 425px) {
+  .logement .collapse-header {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .image-index {
+    display: none;
+  }
+  .logement-container h1 {
+    font-size: 18px;
+  }
+}
 
 @media (max-width: 375px) {
 
-
+  .logement-container h1 {
+    font-size: 18px;
+  }
   .info-owner {
     display: flex;
     align-items: flex-start;
@@ -167,9 +181,7 @@ body {
     width: 25%;
   }
 
-  .image-index {
-    left: 45%;
-  }
+  
   .collapse-information {
     display: flex;
     flex-wrap: wrap;
@@ -179,10 +191,22 @@ body {
     flex-direction: column;
 
 }
+.logement .collapse-header {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.image-index {
+  display: none;
+}
 
 }
 
 @media (max-width: 320px) {
+
+  .logement-container h1 {
+    font-size: 18px;
+  }
   .logement-main {
     width: 90vw;
   }
@@ -193,15 +217,7 @@ body {
   .prev svg {
     width: 15px;
   }
-  .image-index {
-    position: absolute;
-    bottom: 10px;
-    left: 45%;
-    color: white;
-    border-radius: 5px;
-    font-size: 20px;
-    letter-spacing: -2px;
-  }
+  
 
   .host-picture {
     height: 60px;
@@ -229,5 +245,12 @@ body {
     display: flex;
     flex-direction: column;
 
+}
+.logement .collapse-header {
+  font-size: 13px;
+  font-weight: 700;
+}
+.image-index {
+  display: none;
 }
 }

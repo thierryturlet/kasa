@@ -43,6 +43,7 @@
   transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
   width: 100%;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif,
 }
 
 .collapse-content ul {
@@ -53,7 +54,7 @@
   
   
   
-@media (max-width: 320px) {
+@media (max-width: 767px) {
 
   .about-container{
     width:90%;
@@ -78,6 +79,11 @@
   }
   .collapse-content {
     width: 100%;
+    font-size: 12px;
+
+    
   }
+
 }
+
 

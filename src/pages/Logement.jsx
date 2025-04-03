@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate,useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import data from "../data/logements.json";
@@ -7,9 +7,17 @@ import Collapse from "../components/Collapse";
 import "../pages/logement.css";
 import Rating from "../components/Rating.jsx";
 
+
+
 const LogementPage = () => {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
+
+  
+  if (!logement) {
+    
+    return <Navigate to="/NotFound" />;
+  }
 
   return (
     <>
